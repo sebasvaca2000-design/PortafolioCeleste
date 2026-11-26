@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#072e33">
+<meta name="description" content="Explora las islas celestes del portafolio de Melanie Silva.">
+<title>Melanie Silva | Portafolio Celeste</title>
+<link rel="icon" href="assets/emblema.svg" type="image/svg+xml">
+<link rel="stylesheet" href="estilos.css">
+<script defer src="contenido.js"></script>
+<script defer src="aventura.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#destinos">Saltar a los destinos</a>
+<main class="experience" aria-label="Portafolio Celeste">
+  <header class="topbar">
+    <div class="brand"><img src="assets/emblema.svg" alt="" width="36" height="35"><span>ARCHIVO CELESTE<small>PORTAFOLIO INTERACTIVO</small></span></div>
+    <nav id="destinos" class="topnav" aria-label="Viajar a una isla"></nav>
+    <button id="ayuda" class="frame help" aria-label="Controles y ayuda" title="Controles y ayuda">?</button>
+  </header>
+  <div class="world" id="world" aria-label="Mapa de islas flotantes"><div class="world-glow" aria-hidden="true"></div><div class="world-sparkles" aria-hidden="true"></div>
+    <svg id="roads" viewBox="0 0 1000 625" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div id="pins" class="pins"></div>
+    <div id="zelda" class="zelda" aria-hidden="true">
+      <div class="zelda-shadow"></div><span class="hero-aura"></span>
+      <div class="zelda-body"><img class="leg leg-left" src="assets/bota-izquierda.webp" alt=""><img class="leg leg-right" src="assets/bota-derecha.webp" alt=""><img class="zelda-torso" src="assets/zelda.webp" alt=""></div>
+      <img class="princess-front" src="assets/princesa-frente.webp" alt="">
+    </div>
+  </div>
+  <section class="hero" aria-labelledby="nombre">
+    <p class="eyebrow"><span>◇</span> PORTAFOLIO <span>◇</span></p>
+    <h1 id="nombre">Melanie<br> Silva</h1>
+    <div class="divider" aria-hidden="true"><span>◆</span></div>
+    <p class="hero-sub">Ingeniería de Software</p><p class="hero-description">Una aventura entre ideas, código y mundos por descubrir.</p>
+    <div class="hero-actions"><button type="button" class="frame cta" data-go="proyectos">⚔ Explorar proyectos</button><button type="button" class="frame cta cta-secondary" data-go="sobre">✦ Conocerme</button></div>
+  </section>
+  <aside class="left-rail is-hidden" aria-label="Misión y tecnologías" data-label="Paneles">
+    <button type="button" class="rail-tab" aria-expanded="false" aria-label="Ver paneles"><span aria-hidden="true">◂</span><span>Ver paneles</span></button>
+    <div class="rail-cards">
+    <section class="frame hud mission">
+      <h2><button type="button" class="hud-toggle" aria-expanded="true" aria-controls="mission-content"><span><span aria-hidden="true">◎</span> Misión actual</span><span class="hud-chevron" aria-hidden="true">⌃</span></button></h2>
+      <div class="hud-content" id="mission-content"><ul><li id="mission-arrive">Llega a una isla</li><li id="mission-open">Abre su santuario</li><li id="mission-all">Descubre las cinco islas</li></ul></div>
+    </section>
+    <section class="frame hud tech">
+      <h2><button type="button" class="hud-toggle" aria-expanded="true" aria-controls="tech-content"><span><span aria-hidden="true">◇</span> Tecnologías</span><span class="hud-chevron" aria-hidden="true">⌃</span></button></h2>
+      <div class="hud-content" id="tech-content"><div id="tech-chips" class="tech-chips"></div></div>
+    </section>
+    </div>
+  </aside>
+  <aside class="right-rail is-hidden" aria-label="Perfil y progreso" data-label="Perfil">
+    <button type="button" class="rail-tab" aria-expanded="false" aria-label="Ver perfil"><span>Ver perfil</span><span aria-hidden="true">▸</span></button>
+    <section class="frame hud profile">
+      <h2><button type="button" class="hud-toggle" aria-expanded="true" aria-controls="profile-content"><span><span aria-hidden="true">♙</span> Perfil</span><span class="hud-chevron" aria-hidden="true">⌃</span></button></h2>
+      <div class="hud-content" id="profile-content">
+      <img src="assets/princesa-perfil.webp" width="92" height="92" alt="Retrato de la princesa aventurera">
+      <p>Estudiante de Ingeniería de Software</p><p class="location">◇ Ecuador</p></div>
+    </section>
+    <section class="frame hud progress">
+      <h2><button type="button" class="hud-toggle" aria-expanded="true" aria-controls="progress-content"><span><span aria-hidden="true">✦</span> Progreso</span><span class="hud-chevron" aria-hidden="true">⌃</span></button></h2>
+      <div class="hud-content" id="progress-content">
+      <p><span>Islas descubiertas</span> <strong id="progress-count">0 / 5</strong></p>
+      <progress id="tracker" value="0" max="5" aria-label="Islas descubiertas"></progress></div>
+    </section>
+  </aside>
+  <section class="frame hud minimap is-hidden" aria-labelledby="map-title">
+    <button type="button" class="rail-tab" aria-expanded="false" aria-controls="mini-content" aria-label="Ver mapa"><span aria-hidden="true">◂</span><span>Ver mapa</span></button>
+    <h2 id="map-title"><span aria-hidden="true">◇</span> Mapa celeste <small>▲ N</small></h2>
+    <div class="minimap-content" id="mini-content"><svg id="mini-art" viewBox="237 155 616 490" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+  </section>
+  <section class="controls frame is-collapsed" id="game-controls" aria-label="Controles de movimiento">
+    <button type="button" id="toggle-controls" class="controls-toggle" aria-expanded="false" aria-controls="controls-content" title="Mostrar u ocultar controles">
+      <span class="quest-diamond" aria-hidden="true">✧</span>
+      <span id="quest-location">REGIÓN CELESTE · INICIO</span>
+      <span class="controls-toggle-label">Controles</span>
+      <span class="controls-chevron" aria-hidden="true">⌃</span>
+    </button>
+    <div id="controls-content" class="controls-content" hidden>
+    <div class="controls-line">
+      <div class="step-buttons" aria-label="Mover a la princesa">
+        <button data-step="left" aria-label="Mover a la izquierda">←</button>
+        <button data-step="up" aria-label="Mover arriba">↑</button>
+        <button data-step="down" aria-label="Mover abajo">↓</button>
+        <button data-step="right" aria-label="Mover a la derecha">→</button>
+      </div>
+      <span class="key-hint">WASD o flechas</span>
+      <button id="interact" class="interact" disabled><kbd>E</kbd> <span>Abrir isla</span></button>
+    </div>
+    <div class="travel-track" aria-hidden="true"><span id="travel-fill"></span></div><p id="status" role="status" aria-live="polite">Elige una isla o sigue los senderos con la princesa.</p>
+    </div>
+  </section>
+</main>
+<dialog id="island-dialog" class="frame modal" aria-labelledby="dialog-title">
+  <div class="modal-top"><p id="dialog-kicker" class="eyebrow">SANTUARIO CELESTE</p><button type="button" class="close" aria-label="Cerrar ventana" autofocus>×</button></div>
+  <div class="modal-emblem" aria-hidden="true">✧</div><h2 id="dialog-title"></h2><p class="modal-lede">ARCHIVO DE LA EXPEDICIÓN CELESTE</p>
+  <div class="divider" aria-hidden="true"><span>◆</span></div>
+  <div id="dialog-body"></div>
+</dialog>
+<noscript>Activa JavaScript para controlar a la princesa y abrir las islas del portafolio.</noscript>
+</body>
+</html>

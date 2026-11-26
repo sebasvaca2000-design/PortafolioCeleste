@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio profesional de Melanie Silva, estudiante de Ingeniería en Software.">
+  <meta name="theme-color" content="#0a0812">
+  <title>Melanie Silva | Ingeniería en Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span>MS</span> Melanie Silva</a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Navegación principal"><a href="#sobre-mi">Sobre mí</a><a href="#habilidades">Habilidades</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav>
+  </header>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Estudiante de Ingeniería en Software</p>
+        <h1>Construyo soluciones que unen <em>lógica</em> y experiencia.</h1>
+        <p class="lead">Soy Melanie Silva. Exploro el desarrollo web, las aplicaciones móviles, las bases de datos y la inteligencia artificial mediante proyectos académicos con propósito.</p>
+        <div class="hero-actions"><a class="button primary" href="#proyectos">Explorar proyectos</a><a class="button ghost" href="https://www.linkedin.com/in/melanie-silva-28633b226" target="_blank" rel="noreferrer">Ver LinkedIn</a></div>
+        <div class="hero-stats" aria-label="Resumen profesional"><div><strong>9</strong><span>repositorios públicos</span></div><div><strong>Full stack</strong><span>web y móvil</span></div><div><strong>UTA</strong><span>proyectos académicos</span></div></div>
+      </div>
+      <div class="hero-visual reveal"><div class="portrait-card"><img src="assets/melanie-banner.jpeg" alt="Presentación ilustrada de Melanie Silva"><div class="portrait-label"><span>Disponible para aprender y crear</span><b>Melanie Silva</b></div></div><span class="orb orb-one"></span><span class="orb orb-two"></span></div>
+    </section>
+    <section class="marquee" aria-label="Tecnologías destacadas"><div>JavaScript · React · Node.js · PostgreSQL · TypeScript · Docker · Java · MongoDB · Linux ·</div></section>
+    <section class="section about" id="sobre-mi">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> Perfil</p><h2>Aprender haciendo</h2></div>
+      <div class="about-grid"><p class="about-lead reveal">Me interesa transformar problemas reales en sistemas claros, funcionales y bien organizados.</p><div class="about-copy reveal"><p>Mi formación en Ingeniería en Software se refleja en proyectos que abarcan inventarios tecnológicos, gestión comunitaria de riego, movilidad universitaria, comercio de tecnología y resolución de problemas clásicos de inteligencia artificial.</p><p>Trabajo con interfaces web, APIs REST, bases de datos relacionales y NoSQL, contenedores y aplicaciones de escritorio o móviles. Cada proyecto es una oportunidad para fortalecer arquitectura, pruebas, experiencia de usuario y trabajo colaborativo.</p><div class="profile-links"><a href="https://github.com/MelSilva-Dev" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.linkedin.com/in/melanie-silva-28633b226" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div></div>
+    </section>
+    <section class="section skills" id="habilidades">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> Capacidades</p><h2>Una base técnica versátil</h2></div>
+      <div class="skill-grid"><article class="skill-card reveal"><small>01</small><h3>Frontend</h3><p>Interfaces adaptables y accesibles con HTML5, CSS, JavaScript, TypeScript, React, Next.js y Angular.</p><div class="tags"><span>React</span><span>Next.js</span><span>Angular</span></div></article><article class="skill-card reveal"><small>02</small><h3>Backend</h3><p>Servicios y APIs con Node.js, NestJS, Java y C# aplicando validación, autenticación y separación por capas.</p><div class="tags"><span>Node.js</span><span>NestJS</span><span>.NET</span></div></article><article class="skill-card reveal"><small>03</small><h3>Datos y entorno</h3><p>Persistencia, consultas y despliegue con PostgreSQL, MySQL, MongoDB, Oracle, Docker, Bash y Linux.</p><div class="tags"><span>PostgreSQL</span><span>Docker</span><span>Linux</span></div></article></div>
+    </section>
+    <section class="section projects" id="proyectos">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> Trabajo seleccionado</p><h2>Proyectos que resuelven y enseñan</h2></div>
+      <div class="project-filters reveal" role="group" aria-label="Filtrar proyectos"><button class="active" data-filter="all">Todos</button><button data-filter="fullstack">Full stack</button><button data-filter="ia">Algoritmos e IA</button><button data-filter="apps">Aplicaciones</button></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal" data-category="fullstack"><div class="project-number">01</div><div><p class="project-type">Sistema full stack</p><h3>Gestión de Riego Jones</h3><p>Plataforma para digitalizar turnos de riego, usuarios, finanzas, noticias y auditoría comunitaria con Angular, Node.js y PostgreSQL.</p><ul><li>Angular</li><li>Node.js</li><li>PostgreSQL</li></ul></div><a href="https://github.com/MelSilva-Dev/Gestion-de-Riego-Jones" target="_blank" rel="noreferrer" aria-label="Abrir Gestión de Riego Jones en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="fullstack"><div class="project-number">02</div><div><p class="project-type">Inventario tecnológico</p><h3>GITT UTA</h3><p>Gestión de equipos, préstamos, ubicaciones, usuarios y reportes para talleres de FISEI.</p><ul><li>Next.js</li><li>TypeScript</li><li>Tailwind</li></ul></div><a href="https://github.com/MelSilva-Dev/GITT-UTA" target="_blank" rel="noreferrer" aria-label="Abrir GITT UTA en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="fullstack"><div class="project-number">03</div><div><p class="project-type">Movilidad universitaria</p><h3>U Ride</h3><p>Aplicación para publicar viajes, solicitar cupos, calificar perfiles y recibir novedades en tiempo real.</p><ul><li>React</li><li>NestJS</li><li>Socket.IO</li></ul></div><a href="https://github.com/MelSilva-Dev/Proyecto-Gestion-Pruebas" target="_blank" rel="noreferrer" aria-label="Abrir U Ride en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="apps"><div class="project-number">04</div><div><p class="project-type">Web móvil y API</p><h3>GalaxyCell</h3><p>Catálogo tecnológico con API REST, administración de productos e imágenes y cliente Android.</p><ul><li>NestJS</li><li>Kotlin</li><li>React</li></ul></div><a href="https://github.com/MelSilva-Dev/GalaxyCell" target="_blank" rel="noreferrer" aria-label="Abrir GalaxyCell en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="ia"><div class="project-number">05</div><div><p class="project-type">Búsqueda heurística</p><h3>8 Puzzle</h3><p>Juego interactivo con resolución automática mediante A* y distancia Manhattan.</p><ul><li>React</li><li>TypeScript</li><li>C#</li></ul></div><a href="https://github.com/MelSilva-Dev/8puzzle" target="_blank" rel="noreferrer" aria-label="Abrir 8 Puzzle en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="ia"><div class="project-number">06</div><div><p class="project-type">Estrategia e IA</p><h3>Juego Galleta</h3><p>Dots and Boxes por turnos con oponente Minimax y poda alfa beta.</p><ul><li>C#</li><li>Blazor</li><li>.NET</li></ul></div><a href="https://github.com/MelSilva-Dev/Juego-Galleta" target="_blank" rel="noreferrer" aria-label="Abrir Juego Galleta en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="ia"><div class="project-number">07</div><div><p class="project-type">Optimización</p><h3>8 Reinas</h3><p>Solucionador DFS con backtracking y visualización web de las configuraciones válidas.</p><ul><li>React</li><li>JavaScript</li><li>C#</li></ul></div><a href="https://github.com/MelSilva-Dev/8-Reinas" target="_blank" rel="noreferrer" aria-label="Abrir 8 Reinas en GitHub">↗</a></article>
+        <article class="project-card reveal" data-category="apps"><div class="project-number">08</div><div><p class="project-type">Escritorio</p><h3>Sudoku</h3><p>Juego WPF con generación por dificultad y solucionador MRV con backtracking.</p><ul><li>C#</li><li>WPF</li><li>.NET 8</li></ul></div><a href="https://github.com/MelSilva-Dev/Ejercicio-Sudoko" target="_blank" rel="noreferrer" aria-label="Abrir Sudoku en GitHub">↗</a></article>
+      </div>
+      <a class="all-projects reveal" href="https://github.com/MelSilva-Dev?tab=repositories" target="_blank" rel="noreferrer">Ver todos los repositorios en GitHub <span>↗</span></a>
+    </section>
+    <section class="section contact" id="contacto"><p class="eyebrow reveal"><span></span> Conectemos</p><h2 class="reveal">¿Creamos algo <em>útil</em> juntos?</h2><p class="reveal">Puedes conocer mi evolución técnica, revisar el código de mis proyectos o conectar conmigo profesionalmente.</p><div class="contact-actions reveal"><a class="button primary" href="https://www.linkedin.com/in/melanie-silva-28633b226" target="_blank" rel="noreferrer">Contactar en LinkedIn</a><a class="button ghost" href="https://github.com/MelSilva-Dev" target="_blank" rel="noreferrer">Seguir en GitHub</a></div></section>
+  </main>
+  <footer><a class="brand" href="#inicio"><span>MS</span> Melanie Silva</a><p>Portafolio de Ingeniería en Software · 2026</p><a href="#inicio">Volver arriba ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
